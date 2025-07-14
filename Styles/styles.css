@@ -1,0 +1,64 @@
+@import "values.css";
+@import "nav.css";
+@import "hero.css";
+@import "dropdown-menu.css";
+@import "shop.css";
+
+:root {
+  --white: #ffffff;
+  --text-color: #1a1a1a;
+}
+
+/* === Background Hero with Overlay === */
+.bg__hero {
+  position: relative;
+  background-image: url("../Res/Hero_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: visible;
+}
+
+.bg__hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1); 
+  z-index: 1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+
+.logo {
+  margin: 0px 0px 0px 100px;
+  display: flex;
+  align-items: center;
+}
+
+.logo__a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 0px 0px 11px;
+}
+
+
+.arrow svg {
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+  margin-bottom: -5px;
+}
+
+.dropdown:hover .arrow svg {
+  transform: rotate(180deg);
+}
+
