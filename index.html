@@ -96,18 +96,28 @@
     <div class="shop__content">
       <div class="shop__content_title">
         <h2>Featured Products</h2>
+
+        <form class="shop__search">
+          <input
+            class="shop__search__box"
+            type="text"
+            name="search"
+            placeholder="Search"
+          />
+        </form>
       </div>
 
-      <form class="shop__search">
-        <input
-          class="shop__search__box"
-          type="text"
-          name="search"
-          placeholder="Search"
-        />
-      </form>
-
-      <div class="shop__content__nav"></div>
+      <div class="shop__content__nav">
+        <ul class="shop__content__nav__items">
+          <li class="shop__content__nav__item active">
+            <a href="#">Random</a>
+          </li>
+          <li class="shop__content__nav__item"><a href="">Dog</a></li>
+          <li class="shop__content__nav__item"><a href="">Cat</a></li>
+          <li class="shop__content__nav__item"><a href="">Fish</a></li>
+          <li class="shop__content__nav__item"><a href="">Birds</a></li>
+        </ul>
+      </div>
 
       <div class="shop__content__items"></div>
     </div>

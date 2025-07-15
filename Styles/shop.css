@@ -5,7 +5,7 @@
 }
 
 .shop__logo {
-  margin: 0px 0px 0px 112px;
+  margin: 0px 0px 0px 0px;
   display: flex;
   align-items: center;
 }
@@ -27,17 +27,17 @@
 
 .shop__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 40px 119px 0px 120px;
-  border: 1px solid var(--text-color);
+  border: 0.2px solid var(--text-color);
   border-radius: 0px;
 }
 
 .shop__content_title {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
+  width: 100%;
 }
 
 .shop__content_title h2 {
@@ -61,9 +61,74 @@
   border-radius: 50px;
   font-size: 16px;
   background-color: var(--light-gray);
-  background-image: url('../Res/ic_search.svg');
-  background-position: 10px 10px; 
+  background-image: url("../Res/ic_search.svg");
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
   margin: 40px 12px 0px 0px;
+}
+
+.shop__content__nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px 0px 0px;
+}
+
+.shop__content__nav__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop__content__nav__item {
+  list-style: none;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.shop__content__nav__item a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.shop__content__nav__item.active {
+  list-style: none;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+    background: linear-gradient(
+    135deg,
+    #101828 0%,
+    #233250 100%
+  );
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.shop__content__nav__item.active a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.shop__content__nav__item :hover {
+   list-style: none;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+    background: linear-gradient(
+    135deg,
+    #101828 0%,
+    #233250 100%
+  );
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
 }

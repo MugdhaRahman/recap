@@ -4,12 +4,7 @@
 @import "dropdown-menu.css";
 @import "shop.css";
 
-:root {
-  --white: #ffffff;
-  --text-color: #1a1a1a;
-}
 
-/* === Background Hero with Overlay === */
 .bg__hero {
   position: relative;
   background-image: url("../Res/Hero_bg.svg");
