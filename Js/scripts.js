@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
   const navItems = document.querySelectorAll('.shop__content__nav__item');
 
